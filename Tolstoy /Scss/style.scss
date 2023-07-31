@@ -1,0 +1,1111 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+$font-Merriweather: "Merriweather", serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+$font-Philosopher: "Philosopher", sans-serif;
+
+
+$color-chocolate: #14110f;
+$color-peach: #bd9466;
+$color-grey: #e6e6e6;
+$color-grey-text: #666;
+$color-white: #f7f7f7;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navigation {
+  background-color: $color-grey;
+  height: 70px;
+  display: flex;
+  align-items: center;
+
+  padding-left: 15px;
+  padding-right: 25px;
+
+  a {
+    font-family: $font-Merriweather;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-left: 50px;
+    cursor: pointer;
+
+    color: $color-grey-text;
+    text-decoration: none;
+    transition: 500ms ease-in-out color;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .navigation__button {
+    margin-left: auto;
+    font-family: $font-Merriweather;
+    border: none;
+    cursor: pointer;
+
+    span {
+      color: $color-grey-text;
+    }
+  }
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: $color-grey;
+
+  .header__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .header__image-1 {
+      width: 745.291px;
+      height: 894.349px;
+      transition: 300ms ease-in-out all;
+      transition-property: box-shadow transform;
+      border-radius: 50%;
+      grid-column: 2 / 3;
+      margin-bottom: 20px;
+
+      cursor: help;
+
+      &:hover {
+        transform: scale(1.01, 1.01);
+        box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.521);
+      }
+    }
+
+    .header__text {
+      grid-column: 1 / 2;
+
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $color-chocolate;
+        font-family: Philosopher;
+        font-size: 164px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 85%;
+        margin: 10px;
+      }
+
+      .header__name {
+        font-family: $font-Philosopher;
+        color: $color-chocolate;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 85%;
+        margin: 5px;
+        margin-left: 41px;
+      }
+
+      .header__about {
+        color: black;
+        font-family: $font-Merriweather;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 10px;
+        margin-top: 50px;
+        margin-left: 41px;
+      }
+
+      .header__about-2 {
+        font-family: $font-Merriweather;
+        color: #4d4d4d;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin-left: 41px;
+      }
+    }
+
+    .header__age {
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: $color-grey-text;
+      margin: 50px;
+      margin-bottom: 5px;
+      cursor: help;
+
+      time {
+        padding: 5px;
+      }
+
+      strong:hover {
+        transition: 300ms ease-in-out;
+        transition-property: background-color color;
+        background-color: black;
+        border-radius: 3px;
+        color: white;
+      }
+    }
+  }
+}
+
+
+#Biography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: $color-grey;
+
+  h2 {
+    color: $color-peach;
+    font-family: $font-Philosopher;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+  }
+
+  .Biography__age1828 {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+
+    .Biography__age--big-grey {
+      font-family: $font-Philosopher;
+      color: #999;
+      font-size: 112px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 85%;
+      margin: 0;
+
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+
+    .Biography__text--tiny-grey {
+      font-family: $font-Merriweather;
+      color: #333;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+
+      &::first-letter {
+        color: $color-peach;
+        font-family: Philosopher;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+      }
+    }
+
+    .Biography__description-text {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      align-self: start;
+
+      font-family: $font-Merriweather;
+      color: $color-grey-text;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  .Biography__photo-1854 {
+    display: flex;
+
+    align-items: center;
+    gap: 20px;
+
+    img {
+      transition: 200ms ease-in-out;
+      transition-property: transform box-shadow;
+      cursor: help;
+    }
+
+    img:hover {
+      transform: scale(1.01, 1.01);
+      box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.514);
+    }
+
+    .Biography__photo-1 {
+      width: 374px;
+      height: 460px;
+      order: 2;
+    }
+
+    .Biography__photo-2 {
+      width: 300px;
+      height: 400px;
+      order: 3;
+    }
+
+    .Biography__photo-3 {
+      width: 300px;
+      height: 400px;
+      order: 1;
+    }
+  }
+
+  .Biography__age1843-1849 {
+    display: grid;
+    gap: 20p;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: 150px repeat(2, 200px) 130px 140px;
+    column-gap: 40px;
+    margin-bottom: 60px;
+    grid-template-areas:
+      ".  t1"
+      "a1 t2"
+      ".  t3"
+      "a2 t4"
+      ".  t5";
+
+    .education {
+      grid-area: t1;
+      color: black;
+      font-family: $font-Philosopher;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100%;
+      align-self: end;
+    }
+
+    .Biography__age--small {
+      grid-area: a1;
+      justify-self: end;
+      color: #999;
+      font-family: $font-Philosopher;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    .Biography__age--small-2 {
+      grid-area: a2;
+      justify-self: end;
+      align-self: center;
+      color: #999;
+      font-family: $font-Philosopher;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+    }
+
+    .Biography__text--tiny-grey-peach {
+      font-family: $font-Merriweather;
+      color: #333;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      grid-area: t2;
+
+      strong {
+        color: $color-peach;
+        font-family: $font-Merriweather;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    .Biography__text--tiny-grey-peach-2 {
+      font-family: $font-Merriweather;
+      color: #333;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      grid-area: t4;
+      align-self: center;
+
+      strong {
+        color: $color-peach;
+        font-family: $font-Merriweather;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    .Biography__description-text-peach-1 {
+      color: $color-grey-text;
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      grid-area: t3;
+
+      strong {
+        color: $color-peach;
+        font-family: $font-Merriweather;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+    .Biography__description-text-peach-2 {
+      color: $color-grey-text;
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      grid-area: t5;
+      align-self: start;
+    }
+  }
+
+  .Biography__Diary {
+    display: grid;
+    grid-template-columns: max-content 700px;
+
+    img {
+      transition: 200ms ease-in-out;
+      transition-property: transform box-shadow;
+      cursor: help;
+
+      &:hover {
+        transform: scale(1.01, 1.01);
+        box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.384);
+      }
+    }
+
+    p {
+      color: #333;
+      font-family: $font-Merriweather;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+    }
+
+    blockquote {
+      footer {
+        button {
+          cursor: pointer;
+          border: none;
+          color: #333;
+          font-family: $font-Merriweather;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          text-decoration: underline;
+
+          &:hover {
+            background-color: black;
+            color: $color-grey;
+            border-radius: 3px;
+            transition: 400ms ease-in-out;
+          }
+        }
+      }
+    }
+
+    #Biography__button {
+      grid-column: 2 / 3;
+      cursor: pointer;
+      width: 347px;
+      height: fit-content;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      margin-left: 40px;
+      border: $color-peach solid 1px;
+      text-align: center;
+      transition: 200ms ease-in-out;
+      transition-property: background-color color;
+
+      &:hover {
+        background-color: $color-peach;
+
+        .button-text {
+          color: $color-grey;
+        }
+
+        .wiki-link {
+          visibility: visible;
+        }
+      }
+
+      .button-text {
+        color: $color-peach;
+        font-family: $font-Merriweather;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 1px;
+      }
+
+      .wiki-link {
+        visibility: hidden;
+        font-family: $font-Merriweather;
+        font-size: 15px;
+        margin: 0;
+        color: #e6e6e670;
+      }
+    }
+  }
+}
+
+
+#Famous-works {
+  display: grid;
+  background-color: $color-white;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content fit-content;
+  place-items: center;
+
+  .Famous-works__books {
+    display: grid;
+    grid-template-columns: repeat(6, 293px);
+    grid-template-rows: 111px 50px repeat(5, 111px);
+    row-gap: 10px;
+    margin-bottom: 100px;
+    grid-template-areas:
+      "text text text . .  button "
+      ". . . . . ."
+      "book book text1 text1 text1 text1"
+      "book book  text2 text2 text2 text2"
+      "book book text3 text3 text3 text3"
+      "book book text4 text4 text4 text4"
+      "about about text5 text5 text5 text5";
+
+    .Famous-works__booksPlace {
+      grid-area: book;
+      flex-direction: column;
+      margin: 0;
+      display: flex;
+      align-items: start;
+      text-align: start;
+
+      img {
+        width: 297px;
+        transition: 200ms ease-in-out;
+        transition-property: transform box-shadow;
+        cursor: zoom-in;
+
+        &:hover {
+          transform: scale(1.01, 1.01);
+          box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.384);
+        }
+      }
+
+      p {
+        color: #4d4d4d;
+        font-family: $font-Merriweather;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding-right: 80px;
+      }
+    }
+
+    .Famous-works__header-books {
+      grid-area: text;
+
+      font-family: $font-Philosopher;
+      color: black;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 90%;
+    }
+
+    .Famous-works__button {
+      grid-area: button;
+
+      border: 1px solid $color-peach;
+      cursor: pointer;
+      background-color: $color-white;
+      width: 293px;
+      height: fit-content;
+      align-self: end;
+      transition: 200ms ease-in-out;
+      transition-property: color background-color;
+
+      &:hover {
+        background-color: $color-peach;
+        color: $color-white;
+        .button-text-2 {
+          color: $color-white;
+        }
+        .wiki-link-2 {
+          visibility: visible;
+        }
+      }
+
+      .button-text-2 {
+        color: $color-peach;
+        font-family: Merriweather;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 1px;
+      }
+
+      .wiki-link-2 {
+        visibility: hidden;
+        font-size: 15px;
+        margin: 0;
+        color: #e6e6e670;
+        font-family: $font-Merriweather;
+      }
+    }
+
+    .Famous-works__book {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border-top: 1px solid black;
+      justify-content: space-between;
+
+      a {
+        color: $color-peach;
+        font-family: $font-Merriweather;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        align-self: center;
+        padding: 3px;
+
+        transition: 200ms ease-in-out;
+        transition-property: color background-color;
+
+        &:hover {
+          background-color: $color-peach;
+          color: $color-white;
+          border-radius: 4px;
+        }
+      }
+
+      h2 {
+        color: #4d4d4d;
+        font-family: $font-Philosopher;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 85%;
+        transition: 200ms ease-in-out color;
+        margin: 0;
+        align-self: center;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-peach;
+        }
+      }
+    }
+
+    #book-1 {
+      grid-area: text1;
+
+      &:focus {
+        color: $color-peach;
+      }
+    }
+
+    #book-2 {
+      grid-area: text2;
+
+      a { font-size: 20px; }
+    }
+
+    #book-3 {
+      grid-area: text3;
+    }
+
+    #book-4 {
+      grid-area: text4;
+    }
+
+    #book-5 {
+      grid-area: text5;
+    }
+
+    #book-сover {
+      grid-area: book;
+    }
+  }
+
+  .Famous-works__count {
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+    justify-content: space-around;
+    background-color: $color-grey;
+    align-items: center;
+
+    strong {
+      color: $color-peach;
+      font-family: $font-Philosopher;
+      font-size: 112px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 85%;
+    }
+
+    p {
+      color: #333;
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      margin: 1px;
+    }
+
+    .Famous-works__count-1 {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .Famous-works__count-2 {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .Famous-works__count-3 {
+      display: inline-flex;
+      flex-direction: column;
+    }
+  }
+}
+
+
+.Nobel-Prize__header {
+  display: flex;
+  background-color: $color-white;
+  color: $color-peach;
+  font-family: $font-Philosopher;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  margin-left: 50px;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+
+
+.Nobel-Prize {
+  background-color: $color-white;
+  display: grid;
+  grid-template-columns: 35% 1fr;
+
+  padding: 50px;
+  height: 1000px;
+
+  .Nobel-Prize__photo-1 {
+    width: 609px;
+    height: 974px;
+    transition: 200ms ease-in-out;
+    transition-property: transform box-shadow;
+
+    &:hover {
+      transform: scale(1.01, 1.01);
+      box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.384);
+      cursor: help;
+    }
+  }
+
+  .Nobel-Prize__photo-2 {
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+    img {
+      width: 940.528px;
+      height: 598px;
+      transition: 200ms ease-in-out;
+      transition-property: transform drop-shadow;
+      align-self: center;
+
+      &:hover {
+        transform: scale(1.01, 1.01);
+        filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.384));
+        cursor: help;
+      }
+    }
+
+    .Nobel-Prize_text {
+      text-align: start;
+      margin-left: 105px;
+      font-family: $font-Merriweather;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+
+    .Nobel-Prize_text--big {
+      text-align: start;
+      margin-left: 105px;
+      font-family: $font-Merriweather;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+}
+
+
+.transition {
+  height: 160px;
+  background-color: $color-chocolate;
+}
+
+.transition--white {
+  background-color: $color-white;
+  height: 110px;
+}
+
+.transition--white--tiny {
+  background-color: $color-white;
+  height: 100px;
+}
+
+
+#The-screenplays {
+  display: grid;
+  height: 2026px;
+  background-color: $color-chocolate;
+
+  grid-template-rows: repeat(13, 160px);
+  grid-template-columns: repeat(8, 246px);
+  grid-template-areas: 
+  ". . . tex tex . . ."
+  ". wid . widG widG . . ."
+  ". wid . widG widG . wid2 ."
+  ". . . . . . wid2 ."
+  ". . . . . . . ."
+  ". . . . . . . ."
+  ". . . . . . . ."
+  ". wid3 . . . . wid5 ."
+  ". wid3 . . . . wid5 ."
+  ". . . . . . . ."
+  ". . . wid4 wid4 . . ."
+  ". . . wid4 wid4 . . ."
+  ". . . . . . . .";
+
+  h2 {
+    color: #bd9466;
+    font-family: $font-Philosopher;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    grid-area: tex;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .The-screenplays__box {
+    height: 423px;
+    width: 246px;
+    animation-name: levitation;
+    animation-timing-function: cubic-bezier(.64,.13,.31,.95);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    img {
+      transition: 200ms ease-in-out;
+      transition-property: box-shadow transform;
+    }
+
+    img:hover {
+      transform: scale(1.01, 1.01);
+      box-shadow: 0 13px 25px 1px #bd94665d;
+    }
+
+    p {
+      color: #999;
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h5 {
+      color: $color-white;
+      font-family: $font-Merriweather;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%; 
+      margin: 1px;
+    }
+  }
+
+  .screenplay-1 {
+    grid-area: wid;
+  }
+
+  .screenplay-2 {
+    grid-area: widG;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+  }
+
+  .screenplay-3 {
+    grid-area: wid2;
+  }
+
+  .screenplay-4 {
+    grid-area: wid3;
+  }
+
+  .screenplay-5 {
+    grid-area: wid4;
+    justify-self: center;
+  }
+
+  .screenplay-6 {
+    grid-area: wid5;
+  }
+}
+
+
+@keyframes levitation  {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+    animation-fill-mode: forwards;
+  }
+  
+  75% {
+    transform: translateY(-10px);
+    animation-fill-mode: forwards;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+#Words-of-Contemporaries {
+  display: grid;
+  grid-template-columns: repeat(19,102px);
+  grid-template-rows: repeat(19, 61px);
+  row-gap: 10px;
+
+  h5 {
+    color: #000;
+    font-family: $font-Merriweather;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  h2 {
+    color: $color-peach;
+    font-family: $font-Philosopher;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+
+    grid-column: 2 / 10;
+    grid-row: 1 / 2;
+    align-self: center;
+  }
+
+  img {
+    width: 486.677px;
+    height: 584.013px;
+    border-radius: 50%;
+    transition: 300ms ease-in-out all;
+    transition-property: box-shadow transform;
+    cursor: help;
+
+    &:hover {
+      transform: scale(1.01, 1.01);
+      box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.521);
+    }
+  }
+
+  p::before {
+    content: "«";
+  }
+
+  p::after {
+    content: "»";
+  }
+
+  .Words-of-Contemporaries__photo-1 {
+    grid-column: 2 / 7;
+    grid-row: 3 / 12;
+  }
+
+  .Words-of-Contemporaries__Petr-name {
+    grid-row: 11 / 12;
+    grid-column: 2 / 7;
+  }
+
+  .Words-of-Contemporaries__Petr-comment {
+    text-align: center;
+    grid-row: 6 / 7;
+    grid-column: 9 / 17;
+   
+    p:first-child {
+      color: #1A1A1A;
+      font-family: $font-Merriweather;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      margin: 0;
+    }
+
+    p {
+      color: #333;
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%
+    }
+  }
+
+  .Words-of-Contemporaries__photo-2 {
+    grid-column: 14 / 19;
+    grid-row: 11 / 19;
+    justify-self: end;
+  }
+
+  .Words-of-Contemporaries__Maksim-name {
+    grid-row: 19 / 20;
+    grid-column: -6 / -3;
+  }
+
+  .Words-of-Contemporaries__Maksim-comment {
+    grid-column: 4 / 12;
+    grid-row: 14 / 17;
+    text-align: center;
+
+    p:first-child {
+      color: #1A1A1A;
+      font-family: $font-Merriweather;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      margin: 0;
+    }
+
+    p {
+      color: #333;
+      font-family: $font-Merriweather;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%
+    }
+  }
+}
+
+.footer {
+  background-color: $color-chocolate;
+  display: flex;
+  flex-direction: column;
+  height: 327px;
+  justify-content: space-around;
+  text-align: center;
+
+  strong {
+    color: $color-peach;
+    text-align: center;
+    font-family: $font-Philosopher;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85%; 
+  }
+
+  a {
+    font-family: $font-Merriweather;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-left: 50px;
+    cursor: pointer;
+
+    color: $color-grey-text;
+    text-decoration: none;
+    transition: 500ms ease-in-out color;
+
+    &:hover {
+      color: $color-peach;
+    }
+  }
+
+  p {
+    color: #999;
+    font-family: $font-Merriweather;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,927 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation {
+  background-color: #e6e6e6;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.navigation a {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #666;
+  text-decoration: none;
+  transition: 500ms ease-in-out color;
+}
+.navigation a:hover {
+  color: black;
+}
+.navigation .navigation__button {
+  margin-left: auto;
+  font-family: "Merriweather", serif;
+  border: none;
+  cursor: pointer;
+}
+.navigation .navigation__button span {
+  color: #666;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
+}
+.header .header__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header .header__body .header__image-1 {
+  width: 745.291px;
+  height: 894.349px;
+  transition: 300ms ease-in-out all;
+  transition-property: box-shadow transform;
+  border-radius: 50%;
+  grid-column: 2/3;
+  margin-bottom: 20px;
+  cursor: help;
+}
+.header .header__body .header__image-1:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.521);
+}
+.header .header__body .header__text {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+}
+.header .header__body .header__text h1 {
+  color: #14110f;
+  font-family: Philosopher;
+  font-size: 164px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85%;
+  margin: 10px;
+}
+.header .header__body .header__text .header__name {
+  font-family: "Philosopher", sans-serif;
+  color: #14110f;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85%;
+  margin: 5px;
+  margin-left: 41px;
+}
+.header .header__body .header__text .header__about {
+  color: black;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 10px;
+  margin-top: 50px;
+  margin-left: 41px;
+}
+.header .header__body .header__text .header__about-2 {
+  font-family: "Merriweather", serif;
+  color: #4d4d4d;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-left: 41px;
+}
+.header .header__body .header__age {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #666;
+  margin: 50px;
+  margin-bottom: 5px;
+  cursor: help;
+}
+.header .header__body .header__age time {
+  padding: 5px;
+}
+.header .header__body .header__age strong:hover {
+  transition: 300ms ease-in-out;
+  transition-property: background-color color;
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+}
+
+#Biography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e6e6e6;
+}
+#Biography h2 {
+  color: #bd9466;
+  font-family: "Philosopher", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+}
+#Biography .Biography__age1828 {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+}
+#Biography .Biography__age1828 .Biography__age--big-grey {
+  font-family: "Philosopher", sans-serif;
+  color: #999;
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85%;
+  margin: 0;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+#Biography .Biography__age1828 .Biography__text--tiny-grey {
+  font-family: "Merriweather", serif;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#Biography .Biography__age1828 .Biography__text--tiny-grey::first-letter {
+  color: #bd9466;
+  font-family: Philosopher;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+#Biography .Biography__age1828 .Biography__description-text {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: start;
+  font-family: "Merriweather", serif;
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#Biography .Biography__photo-1854 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#Biography .Biography__photo-1854 img {
+  transition: 200ms ease-in-out;
+  transition-property: transform box-shadow;
+  cursor: help;
+}
+#Biography .Biography__photo-1854 img:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.514);
+}
+#Biography .Biography__photo-1854 .Biography__photo-1 {
+  width: 374px;
+  height: 460px;
+  order: 2;
+}
+#Biography .Biography__photo-1854 .Biography__photo-2 {
+  width: 300px;
+  height: 400px;
+  order: 3;
+}
+#Biography .Biography__photo-1854 .Biography__photo-3 {
+  width: 300px;
+  height: 400px;
+  order: 1;
+}
+#Biography .Biography__age1843-1849 {
+  display: grid;
+  gap: 20p;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: 150px repeat(2, 200px) 130px 140px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-bottom: 60px;
+  grid-template-areas: ".  t1" "a1 t2" ".  t3" "a2 t4" ".  t5";
+}
+#Biography .Biography__age1843-1849 .education {
+  grid-area: t1;
+  color: black;
+  font-family: "Philosopher", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  align-self: end;
+}
+#Biography .Biography__age1843-1849 .Biography__age--small {
+  grid-area: a1;
+  justify-self: end;
+  color: #999;
+  font-family: "Philosopher", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#Biography .Biography__age1843-1849 .Biography__age--small-2 {
+  grid-area: a2;
+  justify-self: end;
+  align-self: center;
+  color: #999;
+  font-family: "Philosopher", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#Biography .Biography__age1843-1849 .Biography__text--tiny-grey-peach {
+  font-family: "Merriweather", serif;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  grid-area: t2;
+}
+#Biography .Biography__age1843-1849 .Biography__text--tiny-grey-peach strong {
+  color: #bd9466;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#Biography .Biography__age1843-1849 .Biography__text--tiny-grey-peach-2 {
+  font-family: "Merriweather", serif;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  grid-area: t4;
+  align-self: center;
+}
+#Biography .Biography__age1843-1849 .Biography__text--tiny-grey-peach-2 strong {
+  color: #bd9466;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#Biography .Biography__age1843-1849 .Biography__description-text-peach-1 {
+  color: #666;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  grid-area: t3;
+}
+#Biography .Biography__age1843-1849 .Biography__description-text-peach-1 strong {
+  color: #bd9466;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#Biography .Biography__age1843-1849 .Biography__description-text-peach-2 {
+  color: #666;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  grid-area: t5;
+  align-self: start;
+}
+#Biography .Biography__Diary {
+  display: grid;
+  grid-template-columns: max-content 700px;
+}
+#Biography .Biography__Diary img {
+  transition: 200ms ease-in-out;
+  transition-property: transform box-shadow;
+  cursor: help;
+}
+#Biography .Biography__Diary img:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.384);
+}
+#Biography .Biography__Diary p {
+  color: #333;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+#Biography .Biography__Diary blockquote footer button {
+  cursor: pointer;
+  border: none;
+  color: #333;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-decoration: underline;
+}
+#Biography .Biography__Diary blockquote footer button:hover {
+  background-color: black;
+  color: #e6e6e6;
+  border-radius: 3px;
+  transition: 400ms ease-in-out;
+}
+#Biography .Biography__Diary #Biography__button {
+  grid-column: 2/3;
+  cursor: pointer;
+  width: 347px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 40px;
+  border: #bd9466 solid 1px;
+  text-align: center;
+  transition: 200ms ease-in-out;
+  transition-property: background-color color;
+}
+#Biography .Biography__Diary #Biography__button:hover {
+  background-color: #bd9466;
+}
+#Biography .Biography__Diary #Biography__button:hover .button-text {
+  color: #e6e6e6;
+}
+#Biography .Biography__Diary #Biography__button:hover .wiki-link {
+  visibility: visible;
+}
+#Biography .Biography__Diary #Biography__button .button-text {
+  color: #bd9466;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 1px;
+}
+#Biography .Biography__Diary #Biography__button .wiki-link {
+  visibility: hidden;
+  font-family: "Merriweather", serif;
+  font-size: 15px;
+  margin: 0;
+  color: rgba(230, 230, 230, 0.4392156863);
+}
+
+#Famous-works {
+  display: grid;
+  background-color: #f7f7f7;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content fit-content;
+  place-items: center;
+}
+#Famous-works .Famous-works__books {
+  display: grid;
+  grid-template-columns: repeat(6, 293px);
+  grid-template-rows: 111px 50px repeat(5, 111px);
+  row-gap: 10px;
+  margin-bottom: 100px;
+  grid-template-areas: "text text text . .  button " ". . . . . ." "book book text1 text1 text1 text1" "book book  text2 text2 text2 text2" "book book text3 text3 text3 text3" "book book text4 text4 text4 text4" "about about text5 text5 text5 text5";
+}
+#Famous-works .Famous-works__books .Famous-works__booksPlace {
+  grid-area: book;
+  flex-direction: column;
+  margin: 0;
+  display: flex;
+  align-items: start;
+  text-align: start;
+}
+#Famous-works .Famous-works__books .Famous-works__booksPlace img {
+  width: 297px;
+  transition: 200ms ease-in-out;
+  transition-property: transform box-shadow;
+  cursor: zoom-in;
+}
+#Famous-works .Famous-works__books .Famous-works__booksPlace img:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.384);
+}
+#Famous-works .Famous-works__books .Famous-works__booksPlace p {
+  color: #4d4d4d;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding-right: 80px;
+}
+#Famous-works .Famous-works__books .Famous-works__header-books {
+  grid-area: text;
+  font-family: "Philosopher", sans-serif;
+  color: black;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+}
+#Famous-works .Famous-works__books .Famous-works__button {
+  grid-area: button;
+  border: 1px solid #bd9466;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  width: 293px;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: end;
+  transition: 200ms ease-in-out;
+  transition-property: color background-color;
+}
+#Famous-works .Famous-works__books .Famous-works__button:hover {
+  background-color: #bd9466;
+  color: #f7f7f7;
+}
+#Famous-works .Famous-works__books .Famous-works__button:hover .button-text-2 {
+  color: #f7f7f7;
+}
+#Famous-works .Famous-works__books .Famous-works__button:hover .wiki-link-2 {
+  visibility: visible;
+}
+#Famous-works .Famous-works__books .Famous-works__button .button-text-2 {
+  color: #bd9466;
+  font-family: Merriweather;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 1px;
+}
+#Famous-works .Famous-works__books .Famous-works__button .wiki-link-2 {
+  visibility: hidden;
+  font-size: 15px;
+  margin: 0;
+  color: rgba(230, 230, 230, 0.4392156863);
+  font-family: "Merriweather", serif;
+}
+#Famous-works .Famous-works__books .Famous-works__book {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid black;
+  justify-content: space-between;
+}
+#Famous-works .Famous-works__books .Famous-works__book a {
+  color: #bd9466;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  align-self: center;
+  padding: 3px;
+  transition: 200ms ease-in-out;
+  transition-property: color background-color;
+}
+#Famous-works .Famous-works__books .Famous-works__book a:hover {
+  background-color: #bd9466;
+  color: #f7f7f7;
+  border-radius: 4px;
+}
+#Famous-works .Famous-works__books .Famous-works__book h2 {
+  color: #4d4d4d;
+  font-family: "Philosopher", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85%;
+  transition: 200ms ease-in-out color;
+  margin: 0;
+  align-self: center;
+  cursor: pointer;
+}
+#Famous-works .Famous-works__books .Famous-works__book h2:hover {
+  color: #bd9466;
+}
+#Famous-works .Famous-works__books #book-1 {
+  grid-area: text1;
+}
+#Famous-works .Famous-works__books #book-1:focus {
+  color: #bd9466;
+}
+#Famous-works .Famous-works__books #book-2 {
+  grid-area: text2;
+}
+#Famous-works .Famous-works__books #book-2 a {
+  font-size: 20px;
+}
+#Famous-works .Famous-works__books #book-3 {
+  grid-area: text3;
+}
+#Famous-works .Famous-works__books #book-4 {
+  grid-area: text4;
+}
+#Famous-works .Famous-works__books #book-5 {
+  grid-area: text5;
+}
+#Famous-works .Famous-works__books #book-сover {
+  grid-area: book;
+}
+#Famous-works .Famous-works__count {
+  display: flex;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  align-items: center;
+}
+#Famous-works .Famous-works__count strong {
+  color: #bd9466;
+  font-family: "Philosopher", sans-serif;
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85%;
+}
+#Famous-works .Famous-works__count p {
+  color: #333;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 1px;
+}
+#Famous-works .Famous-works__count .Famous-works__count-1 {
+  display: inline-flex;
+  flex-direction: column;
+}
+#Famous-works .Famous-works__count .Famous-works__count-2 {
+  display: inline-flex;
+  flex-direction: column;
+}
+#Famous-works .Famous-works__count .Famous-works__count-3 {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.Nobel-Prize__header {
+  display: flex;
+  background-color: #f7f7f7;
+  color: #bd9466;
+  font-family: "Philosopher", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  margin-left: 50px;
+}
+.Nobel-Prize__header h2 {
+  margin-bottom: 40px;
+}
+
+.Nobel-Prize {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  padding: 50px;
+  height: 1000px;
+}
+.Nobel-Prize .Nobel-Prize__photo-1 {
+  width: 609px;
+  height: 974px;
+  transition: 200ms ease-in-out;
+  transition-property: transform box-shadow;
+}
+.Nobel-Prize .Nobel-Prize__photo-1:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.384);
+  cursor: help;
+}
+.Nobel-Prize .Nobel-Prize__photo-2 {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.Nobel-Prize .Nobel-Prize__photo-2 img {
+  width: 940.528px;
+  height: 598px;
+  transition: 200ms ease-in-out;
+  transition-property: transform drop-shadow;
+  align-self: center;
+}
+.Nobel-Prize .Nobel-Prize__photo-2 img:hover {
+  transform: scale(1.01, 1.01);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.384));
+  cursor: help;
+}
+.Nobel-Prize .Nobel-Prize__photo-2 .Nobel-Prize_text {
+  text-align: start;
+  margin-left: 105px;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.Nobel-Prize .Nobel-Prize__photo-2 .Nobel-Prize_text--big {
+  text-align: start;
+  margin-left: 105px;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.transition {
+  height: 160px;
+  background-color: #14110f;
+}
+
+.transition--white {
+  background-color: #f7f7f7;
+  height: 110px;
+}
+
+.transition--white--tiny {
+  background-color: #f7f7f7;
+  height: 100px;
+}
+
+#The-screenplays {
+  display: grid;
+  height: 2026px;
+  background-color: #14110f;
+  grid-template-rows: repeat(13, 160px);
+  grid-template-columns: repeat(8, 246px);
+  grid-template-areas: ". . . tex tex . . ." ". wid . widG widG . . ." ". wid . widG widG . wid2 ." ". . . . . . wid2 ." ". . . . . . . ." ". . . . . . . ." ". . . . . . . ." ". wid3 . . . . wid5 ." ". wid3 . . . . wid5 ." ". . . . . . . ." ". . . wid4 wid4 . . ." ". . . wid4 wid4 . . ." ". . . . . . . .";
+}
+#The-screenplays h2 {
+  color: #bd9466;
+  font-family: "Philosopher", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  grid-area: tex;
+  margin-top: 0;
+  text-align: center;
+}
+#The-screenplays .The-screenplays__box {
+  height: 423px;
+  width: 246px;
+  animation-name: levitation;
+  animation-timing-function: cubic-bezier(0.64, 0.13, 0.31, 0.95);
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+#The-screenplays .The-screenplays__box img {
+  transition: 200ms ease-in-out;
+  transition-property: box-shadow transform;
+}
+#The-screenplays .The-screenplays__box img:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 13px 25px 1px rgba(189, 148, 102, 0.3647058824);
+}
+#The-screenplays .The-screenplays__box p {
+  color: #999;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#The-screenplays .The-screenplays__box div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#The-screenplays .The-screenplays__box h5 {
+  color: #f7f7f7;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 1px;
+}
+#The-screenplays .screenplay-1 {
+  grid-area: wid;
+}
+#The-screenplays .screenplay-2 {
+  grid-area: widG;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: center;
+}
+#The-screenplays .screenplay-3 {
+  grid-area: wid2;
+}
+#The-screenplays .screenplay-4 {
+  grid-area: wid3;
+}
+#The-screenplays .screenplay-5 {
+  grid-area: wid4;
+  justify-self: center;
+}
+#The-screenplays .screenplay-6 {
+  grid-area: wid5;
+}
+
+@keyframes levitation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+    animation-fill-mode: forwards;
+  }
+  75% {
+    transform: translateY(-10px);
+    animation-fill-mode: forwards;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#Words-of-Contemporaries {
+  display: grid;
+  grid-template-columns: repeat(19, 102px);
+  grid-template-rows: repeat(19, 61px);
+  row-gap: 10px;
+}
+#Words-of-Contemporaries h5 {
+  color: #000;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+#Words-of-Contemporaries h2 {
+  color: #bd9466;
+  font-family: "Philosopher", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  grid-column: 2/10;
+  grid-row: 1/2;
+  align-self: center;
+}
+#Words-of-Contemporaries img {
+  width: 486.677px;
+  height: 584.013px;
+  border-radius: 50%;
+  transition: 300ms ease-in-out all;
+  transition-property: box-shadow transform;
+  cursor: help;
+}
+#Words-of-Contemporaries img:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 20px 20px 2px rgba(0, 0, 0, 0.521);
+}
+#Words-of-Contemporaries p::before {
+  content: "«";
+}
+#Words-of-Contemporaries p::after {
+  content: "»";
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__photo-1 {
+  grid-column: 2/7;
+  grid-row: 3/12;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Petr-name {
+  grid-row: 11/12;
+  grid-column: 2/7;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Petr-comment {
+  text-align: center;
+  grid-row: 6/7;
+  grid-column: 9/17;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Petr-comment p:first-child {
+  color: #1A1A1A;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Petr-comment p {
+  color: #333;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__photo-2 {
+  grid-column: 14/19;
+  grid-row: 11/19;
+  justify-self: end;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Maksim-name {
+  grid-row: 19/20;
+  grid-column: -6/-3;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Maksim-comment {
+  grid-column: 4/12;
+  grid-row: 14/17;
+  text-align: center;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Maksim-comment p:first-child {
+  color: #1A1A1A;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0;
+}
+#Words-of-Contemporaries .Words-of-Contemporaries__Maksim-comment p {
+  color: #333;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.footer {
+  background-color: #14110f;
+  display: flex;
+  flex-direction: column;
+  height: 327px;
+  justify-content: space-around;
+  text-align: center;
+}
+.footer strong {
+  color: #bd9466;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85%;
+}
+.footer a {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #666;
+  text-decoration: none;
+  transition: 500ms ease-in-out color;
+}
+.footer a:hover {
+  color: #bd9466;
+}
+.footer p {
+  color: #999;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
